@@ -24,15 +24,17 @@ body{
 }
 
 .conteiner{
-    height: 100vh;
+    min-height: 736px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
 }
 
 header{
     width: 400px;
-    margin-right: 7vw;
+    margin: 0px 60px 30px 0px;
 }
 
 .texto_header h1{
@@ -62,7 +64,7 @@ header img{
 main{
     background: var(--cor02);
     width: 350px;
-    height: 88vh;
+    height: 88%;
     padding: 20px;
     border-radius: 20px;
     overflow: auto;
@@ -133,13 +135,69 @@ button:hover{
 aside{
     background: var(--cor02);
     display: flex;
+    text-align: center;
+    color: white;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+aside h1{
+    font-size: 1.2rem;
+    margin: 10px 0px;
+    text-decoration: underline;
+}
+
+.aside_images{
+    display: inline-block;
+    width: 300px;
+    margin: 30px 20px;
 }
 
 aside img {
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+aside img:hover{
+    cursor: pointer;
+    opacity: 0.7;
 }
 
 footer{
-    background: yellow;
+    padding: 5px;
+    text-align: center;
+    background: white;
+}
+
+footer span{
+    font-size: 0.8rem;
+}
+
+footer a{
+    font-weight: bolder;
+    color: #278c8c;
+}
+
+@media (max-width: 600px){
+    .conteiner{
+        background: url("images/bolinho.png");
+        background-size: 500px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    main{
+        background: #278c8cd2;
+    }
+    header{
+        display: none;
+    }
+
+    .conteiner::before{
+        content: "Lorem ipsum dolor";
+        font-size: 2rem;
+        font-family: var(--font-cursiva);
+        text-decoration: underline;
+        color: #278c8c;
+    }
 }
