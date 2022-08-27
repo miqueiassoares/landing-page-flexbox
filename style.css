@@ -1,0 +1,145 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-comum);
+    box-sizing: border-box;
+}
+
+:root{
+    /*PALETA DE CORES*/
+    --cor01: #e6e6e6;
+    --cor02: #278c8c;
+    --cor03: #e68320;
+
+    /* FONTS */
+    --font-comum: Arial;
+    --font-cursiva: Patrick Hand, cursive;
+}
+
+body{
+    background: var(--cor01);
+}
+
+.conteiner{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    width: 400px;
+    margin-right: 7vw;
+}
+
+.texto_header h1{
+    color: var(--cor02);
+    font-family: var(--font-cursiva);
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+header p{
+    color: rgb(93, 93, 93);
+    font-family: var(--font-comum);
+    line-height: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header img{
+    display: block;
+    margin: auto;
+    width: 400px;
+    height: 450px;
+    border-radius: 15px;
+}
+
+main{
+    background: var(--cor02);
+    width: 350px;
+    height: 88vh;
+    padding: 20px;
+    border-radius: 20px;
+    overflow: auto;
+}
+
+.titulo01_main{
+    color: white;
+    font-size: 1.3rem;
+}
+
+.titulo02_main{
+    margin-top: 30px;
+    color: white;
+    font-size: 1.2rem;
+
+}
+main p{
+    color: var(--cor01);
+    margin-top: 20px;
+    line-height: 1.5rem;
+}
+
+form{
+    margin-top: 30px;
+}
+
+label{
+    color: var(--cor01);
+}
+label:after{
+    content: "*";
+}
+
+input{
+    display: block;
+    width: 100%;
+    height: 25px;
+    border-radius: 4px;
+    border: 0;
+    margin: 10px 0px 10px;
+}
+
+button{
+    color: white;
+    font-weight: bolder;
+    background: var(--cor03);
+    border: 0;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+button:hover{
+    color: #e6e6e6;
+    background-color: #d07820;
+}
+
+#especial{
+    font-size: 0.6rem;
+    color: rgb(83, 83, 83);
+    font-weight: bold;
+    line-height: 1rem;
+}
+
+aside{
+    background: var(--cor02);
+    display: flex;
+}
+
+aside img {
+    width: 300px;
+    height: 300px;
+}
+
+footer{
+    background: yellow;
+}
