@@ -94,6 +94,7 @@ form{
 label{
     color: var(--cor01);
 }
+
 label:after{
     content: "*";
 }
