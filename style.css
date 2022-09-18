@@ -19,6 +19,20 @@
     --font-cursiva: Patrick Hand, cursive;
 }
 
+body::-webkit-scrollbar {
+    width: 16px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--cor02);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--cor03);
+    border-radius: 20px;
+    border: 3px solid var(--cor02);
+}
+
 body{
     background: var(--cor01);
 }
@@ -67,7 +81,6 @@ main{
     height: 88%;
     padding: 20px;
     border-radius: 20px;
-    overflow: auto;
 }
 
 .titulo01_main{
